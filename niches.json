@@ -1,0 +1,64 @@
+{
+  "_help": "Edit freely. 'queries' are Google searches, 'areas' are the default places to sweep, 'keywords' help the competitor finder recognise this niche on a website, 'osm_category' is used when there is no Google key.",
+  "niches": {
+    "property": {
+      "label": "Property management & real estate",
+      "queries": [
+        "property management company",
+        "real estate agency",
+        "real estate agents",
+        "property developers",
+        "serviced apartments",
+        "letting agents",
+        "property valuers"
+      ],
+      "areas": [
+        "Kilimani, Nairobi", "Kileleshwa, Nairobi", "Westlands, Nairobi", "Lavington, Nairobi",
+        "Karen, Nairobi", "Runda, Nairobi", "Upper Hill, Nairobi", "Ngong Road, Nairobi",
+        "Parklands, Nairobi", "Kiambu Road, Nairobi", "Syokimau, Machakos", "Ruaka, Kiambu"
+      ],
+      "keywords": ["real estate", "property management", "properties for sale", "property for sale",
+                   "houses for sale", "apartments for rent", "for rent", "letting", "landlord",
+                   "tenant", "serviced apartment", "property developer", "valuation"],
+      "osm_category": "real estate"
+    },
+    "hospitality": {
+      "label": "Hotels, lodges & short stays",
+      "queries": ["hotel", "boutique hotel", "guest house", "airbnb apartments", "safari lodge"],
+      "areas": ["Westlands, Nairobi", "Kilimani, Nairobi", "Karen, Nairobi", "Naivasha", "Nanyuki", "Diani", "Mombasa"],
+      "keywords": ["hotel", "rooms", "book now", "check-in", "suites", "lodge", "safari", "accommodation"],
+      "osm_category": "hotel"
+    },
+    "schools": {
+      "label": "Private schools & colleges",
+      "queries": ["private school", "international school", "college", "kindergarten"],
+      "areas": ["Karen, Nairobi", "Lavington, Nairobi", "Runda, Nairobi", "Kiambu Road, Nairobi", "Ruiru", "Thika"],
+      "keywords": ["admissions", "curriculum", "pupils", "students", "school", "cbc", "igcse"],
+      "osm_category": "school"
+    },
+    "health": {
+      "label": "Clinics, dentists & hospitals",
+      "queries": ["medical clinic", "dental clinic", "hospital", "physiotherapy", "eye clinic"],
+      "areas": ["Upper Hill, Nairobi", "Westlands, Nairobi", "Kilimani, Nairobi", "Karen, Nairobi", "Parklands, Nairobi"],
+      "keywords": ["clinic", "patients", "doctor", "dental", "appointment", "hospital", "medical"],
+      "osm_category": "clinic"
+    },
+    "professional": {
+      "label": "Law firms, accountants & consultants",
+      "queries": ["law firm", "advocates", "accounting firm", "consulting firm", "insurance agency"],
+      "areas": ["Upper Hill, Nairobi", "Westlands, Nairobi", "Kilimani, Nairobi", "Nairobi CBD"],
+      "keywords": ["advocates", "law firm", "legal", "audit", "tax", "consulting", "insurance"],
+      "osm_category": "lawyer"
+    }
+  },
+  "area_pool": [
+    "Kilimani, Nairobi", "Kileleshwa, Nairobi", "Westlands, Nairobi", "Lavington, Nairobi", "Karen, Nairobi",
+    "Runda, Nairobi", "Upper Hill, Nairobi", "Parklands, Nairobi", "Gigiri, Nairobi", "Muthaiga, Nairobi",
+    "Spring Valley, Nairobi", "Riverside, Nairobi", "Hurlingham, Nairobi", "South C, Nairobi", "South B, Nairobi",
+    "Langata, Nairobi", "Ngong Road, Nairobi", "Ngong, Kajiado", "Ongata Rongai, Kajiado", "Kitengela, Kajiado",
+    "Syokimau, Machakos", "Athi River, Machakos", "Ruaka, Kiambu", "Ruiru, Kiambu", "Kiambu Road, Nairobi",
+    "Thika Road, Nairobi", "Kasarani, Nairobi", "Embakasi, Nairobi", "Donholm, Nairobi", "Juja, Kiambu",
+    "Kikuyu, Kiambu", "Mombasa Road, Nairobi", "Nairobi CBD", "Nyali, Mombasa", "Mombasa", "Diani",
+    "Nakuru", "Kisumu", "Eldoret", "Nanyuki", "Naivasha", "Thika", "Machakos", "Kilifi", "Malindi"
+  ]
+}

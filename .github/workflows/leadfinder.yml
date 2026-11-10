@@ -1,0 +1,36 @@
+name: LeadFinder auto run
+
+on:
+  schedule:
+    # Fires every day at 04:00 UTC (07:00 Nairobi). The script itself only works
+    # every AUTO_INTERVAL_DAYS days (default 3), so the cadence is exact.
+    - cron: "0 4 * * *"
+  workflow_dispatch:   # adds a "Run workflow" button on GitHub
+
+concurrency:
+  group: leadfinder
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Auto run (next searches + re-check New leads)
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          LEADS_SHEET_ID: ${{ secrets.LEADS_SHEET_ID }}
+          OPEN_PAGERANK_API_KEY: ${{ secrets.OPEN_PAGERANK_API_KEY }}
+          AUTO_CALLS_PER_RUN: ${{ vars.AUTO_CALLS_PER_RUN }}
+          AUTO_INTERVAL_DAYS: ${{ vars.AUTO_INTERVAL_DAYS }}
+        run: python leadfinder.py auto

@@ -1,0 +1,15 @@
+# secrets - never commit
+config.json
+service-account*.json
+*.json.key
+
+# local data
+leads*.xlsx
+usage.json
+~$*.xlsx
+
+# python
+.venv/
+__pycache__/
+
+service-account.json

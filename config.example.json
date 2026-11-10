@@ -1,0 +1,13 @@
+{
+  "google_places_api_key": "",
+  "pagespeed_api_key": "",
+  "open_pagerank_api_key": "",
+  "google_monthly_call_cap": 900,
+  "skip_domains": [
+    "example-big-chain.com"
+  ],
+  "google_sheet_id": "",
+  "google_service_account_file": "service-account.json",
+  "auto_calls_per_run": 60,
+  "auto_interval_days": 3
+}
